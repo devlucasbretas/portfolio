@@ -1,5 +1,93 @@
 /* Minimum reset css */
-* { box-sizing: border-box; }
-body { padding: 0; margin: 0; }
-a { text-decoration: none; }
+* { box-sizing: border-box; scrollbar-base-color:red; }
+body { padding: 0; margin: 0; display: flex; align-items: center; justify-content: space-between; }
+a { text-decoration: none !important; }
+html { overflow-x: hidden;  }
 /* Minimum reset css */
+/* Root Colors */
+:root {
+    --black-01:#1B1F24;
+    --black-02:#1f1f1f;
+    --secondary: #075FE4;
+}
+/* Root Colors */
+/* Fonts */
+    .font1 { font-family: "IBM Plex Sans Devanagari", sans-serif; }
+/* Fonts */
+/* Float Sidebar */
+.float_sidebar {
+    width: 270px;
+    background-color: var(--black-02);
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.dev-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dev-presentation h3 {
+    color: rgb(253, 253, 255);
+}
+.dev-presentation p {
+    color: grey;
+}
+.foto-perfil {
+    width: 150px;
+    margin-bottom: 10px;
+}
+.blue-dt {
+    color:var(--secondary);
+    font-weight: 800;
+    margin-right: 6px;
+}
+.page-navigation {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+    border-radius: 20px;
+}
+.page-navigation a img {
+    width: 28px;
+    margin-right: 10px;
+}
+.img-small {
+    width: 24px !important;
+}
+.page-navigation a {
+    margin: 10px 0px;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(165, 165, 165);
+}
+.page-navigation a:hover{
+    color: rgb(240, 240, 240);
+    margin-left: 10px;
+}
+/* Float Sidebar */
+/* Main */
+main {
+    margin-left: 270px;
+    width: 100%;
+    background-color: #252525;
+    height: 1000vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
